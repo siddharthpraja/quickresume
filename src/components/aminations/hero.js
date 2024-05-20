@@ -1,11 +1,11 @@
 import React from 'react';
 import Lottie from 'lottie-react';
-import animationData from './anim/hero.json'; // Make sure to replace with the correct path to your JSON file
+import animationData from './anim/hero.json'; // Ensure the path is correct
 
 const HeroAnimation = () => {
   return (
-    <div style={{ width: 500, height: 500 }}>
-      <Lottie animationData={animationData} />
+    <div className="w-full sm:w-3/4 md:w-[70vh] lg:w-[50vh] xl:w-[80vh]">
+      <Lottie animationData={animationData} style={{ width: '100%', height: 'auto' }} />
     </div>
   );
 };
